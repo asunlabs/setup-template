@@ -1,0 +1,6 @@
+{
+  ignorePatterns: ['temp.js', '**/vendor/*.js'],
+  rules: {
+    //...
+  },
+};
