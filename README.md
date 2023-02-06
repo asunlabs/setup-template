@@ -17,17 +17,37 @@ Fix below badges.
 ## Contents
 
 - [asunlabs/setup-template](#asunlabssetup-template)
-  - [git commit](#git-commit)
+  - [git](#git)
   - [husky](#husky)
   - [prettier](#prettier)
   - [es lint](#eslint)
 
-## Git commit
+## Git
+
+### Commit
 
 Run
 
 ```sh
 git config --local commit.template .gitmessage.txt
+```
+
+### Tag
+
+Run
+
+```sh
+# create
+git tag [tag-name-here]
+
+# push
+git push origin [tag-name-here]
+
+# remove from local
+git tag -d [tag-name-here]
+
+# remove from remote
+git push origin :[tag-name-here]
 ```
 
 ## Husky

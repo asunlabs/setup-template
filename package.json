@@ -1,6 +1,6 @@
 {
   "name": "setup-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Code snippets from developerasun",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,10 @@
     "format": "prettier -w ./**/*.{js,ts}",
     "lint": "eslint ."
   },
-  "keywords": [],
+  "keywords": [
+    "template",
+    "snippets"
+  ],
   "author": "developerasun",
   "license": "MIT",
   "dependencies": {
