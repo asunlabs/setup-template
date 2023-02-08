@@ -20,8 +20,33 @@
     "description": "New feature or request"
   },
   {
-    "name": "outdated",
+    "name": "test",
+    "color": "5319E7",
+    "description": "Add test cases for a feature"
+  },
+  {
+    "name": "refactor",
+    "color": "ffffff",
+    "description": "Refactor code blocks for a feature"
+  },
+  {
+    "name": "stale",
     "color": "e4e669",
     "description": "Topic become irrelevant or out of date"
+  },
+  {
+    "name": "major",
+    "color": "D4C5F9",
+    "description": "Semver major"
+  },
+  {
+    "name": "minor",
+    "color": "BFD4F2",
+    "description": "Semver minor"
+  },
+  {
+    "name": "patch",
+    "color": "C5DEF5",
+    "description": "Semver patch"
   }
 ]
