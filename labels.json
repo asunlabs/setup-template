@@ -48,5 +48,10 @@
     "name": "patch",
     "color": "C5DEF5",
     "description": "Semver patch"
+  },
+  {
+    "name": "dependencies",
+    "color": "213551",
+    "description": "Dependabot label"
   }
 ]
