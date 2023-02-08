@@ -8,7 +8,7 @@ Fix below badges.
 
 [![wakatime](https://wakatime.com/badge/user/e56daee8-7aae-4b0e-814c-b6bb7f5f841c/project/c15254fd-0a5e-4b66-b897-5ed473191817.svg)](https://wakatime.com/badge/user/e56daee8-7aae-4b0e-814c-b6bb7f5f841c/project/c15254fd-0a5e-4b66-b897-5ed473191817) ![GitHub last commit](https://img.shields.io/github/last-commit/asunlabs/setup-template) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-![lint](https://github.com/asunlabs/setup-template/actions/workflows/lint.yml/badge.svg) ![assign](https://github.com/asunlabs/setup-template/actions/workflows/release.yml/badge.svg) ![label](https://github.com/asunlabs/setup-template/actions/workflows/label.yml/badge.svg) ![assign](https://github.com/asunlabs/setup-template/actions/workflows/assign.yml/badge.svg)
+![release](https://github.com/asunlabs/setup-template/actions/workflows/release.yml/badge.svg) ![label](https://github.com/asunlabs/setup-template/actions/workflows/label.yml/badge.svg) ![assign](https://github.com/asunlabs/setup-template/actions/workflows/assign.yml/badge.svg)
 
 <img src="" alt="banner image here" width="100%" />
 
@@ -51,6 +51,10 @@ git tag -d [tag-name-here]
 git push origin :[tag-name-here]
 ```
 
+### Hook
+
+`pnpm format` and `pnpm lint` is hooked up on pre-push. Check out `.husky/pre-push` and `package.json`.
+
 ## Husky
 
 Run
@@ -63,7 +67,7 @@ pnpm dlx husky-init && pnpm install # pnpm
 pnpm dlx husky-init -and pnpm install # pnpm
 ```
 
-Edit `.husky/pre-commit` and `package.json` for pre-commit hook.
+Edit `.husky/pre-push` and `package.json` for pre-push hook.
 
 ## Prettier
 
