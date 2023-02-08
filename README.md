@@ -2,11 +2,11 @@
 
 <div align="center">
 
-This is a template repository for [developerasun]()'s Nodejs project configuration.
+This is a template repository for [developerasun](https://github.com/developerasun)'s Nodejs project configuration.
 
 Fix below badges.
 
-[![wakatime](https://wakatime.com/badge/user/e56daee8-7aae-4b0e-814c-b6bb7f5f841c/project/c15254fd-0a5e-4b66-b897-5ed473191817.svg)](https://wakatime.com/badge/user/e56daee8-7aae-4b0e-814c-b6bb7f5f841c/project/c15254fd-0a5e-4b66-b897-5ed473191817) ![GitHub last commit](https://img.shields.io/github/last-commit/asunlabs/setup-template) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![wakatime](https://wakatime.com/badge/user/e56daee8-7aae-4b0e-814c-b6bb7f5f841c/project/8b0956fc-8733-4e90-bbbd-38ff833ecf6b.svg)](https://wakatime.com/badge/user/e56daee8-7aae-4b0e-814c-b6bb7f5f841c/project/8b0956fc-8733-4e90-bbbd-38ff833ecf6b) [![Github All Releases](https://img.shields.io/github/downloads/asunlabs/setup-template/total.svg)]() ![GitHub last commit](https://img.shields.io/github/last-commit/asunlabs/setup-template) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ![release](https://github.com/asunlabs/setup-template/actions/workflows/release.yml/badge.svg) ![label](https://github.com/asunlabs/setup-template/actions/workflows/label.yml/badge.svg) ![assign](https://github.com/asunlabs/setup-template/actions/workflows/assign.yml/badge.svg)
 
@@ -21,6 +21,8 @@ Fix below badges.
   - [husky](#husky)
   - [prettier](#prettier)
   - [es lint](#eslint)
+  - [contribution](#contribution)
+  - [star history](#star-history)
   - [contact](#contact)
 
 ## Git
