@@ -1,0 +1,18 @@
+# copy and paste below to .git/config
+
+[init]
+	defaultBranch = main
+[user]
+	name = Jake Sung
+	email = nellow1102@gmail.com
+	username = developerasun
+[alias]
+	h = help
+	aa = add . # add all
+	c = commit
+	p = pull
+	pom = pull origin main
+	ps = push
+	pf = push -f
+	cn = checkout -b # check out to a new branch
+	sm = switch main # check out to main
