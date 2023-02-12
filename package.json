@@ -4,6 +4,7 @@
   "description": "Code snippets from developerasun",
   "main": "index.js",
   "scripts": {
+    "preinstall": "echo add global dependency here",
     "prepare": "husky install",
     "format:check": "prettier -c ./**/*.{js,ts}",
     "format": "prettier -w ./**/*.{js,ts}",
