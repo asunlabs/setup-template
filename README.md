@@ -14,11 +14,12 @@ Fix below badges.
 
 </div>
 
-## Contents
+## Content
 
 - [asunlabs/setup-template](#asunlabssetup-template)
   - [git](#git)
   - [husky](#husky)
+  - [dependencies](#dependencies)
   - [prettier](#prettier)
   - [es lint](#eslint)
   - [contribution](#contribution)
@@ -27,7 +28,7 @@ Fix below badges.
 
 ## Git
 
-### Commit
+### Commit convention
 
 Run
 
@@ -53,9 +54,94 @@ git tag -d [tag-name-here]
 git push origin :[tag-name-here]
 ```
 
+Or use package manager for `semver`.
+
+```sh
+pnpm version patch
+pnpm version minor
+pnpm version major
+```
+
 ### Hook
 
 `pnpm format` and `pnpm lint` is hooked up on pre-push. Check out `.husky/pre-push` and `package.json`.
+
+### Config
+
+Check out `.gitconfig.example` and configure it at `.git/config`
+
+```
+# list of alias
+  h = help
+	aa = add . # add all
+	c = commit
+	p = pull
+	pom = pull origin main
+	ps = push
+	pf = push -f
+	cn = checkout -b # check out to a new branch
+	sm = switch main # check out to main
+```
+
+### Submodule
+
+Get what you need from another repo with git submodule.
+
+Run to `add`
+
+```sh
+git submodule add https://github.com/developerasun/developerasun.git
+```
+
+Check status.
+
+```sh
+git submodule
+
+# result
+# 52d2c4b80553858db28cbe92ee3923a4c1fec531 developerasun (heads/main)
+```
+
+Run to `update`
+
+```sh
+cd submodule
+
+# get latest commit
+git pull
+```
+
+Run to `remove`
+
+```sh
+# step 1
+git submodule deinit -f <submodule-name>
+
+# step 2
+rm -rf .git/modules/<submodule-name>
+
+# step 3
+git rm -f <submodule-name>
+```
+
+<details>
+<summary>Empty submodule</summary>
+
+If submodule directory is empty, try below.
+
+Clone this repo with --recursive flag to clone with all the submodules.
+
+```sh
+git clone <https-url> --recursive
+```
+
+Or, if you already cloned,
+
+```sh
+git submodule update --init
+```
+
+</details>
 
 ## Husky
 
@@ -70,6 +156,24 @@ pnpm dlx husky-init -and pnpm install # pnpm
 ```
 
 Edit `.husky/pre-push` and `package.json` for pre-push hook.
+
+## Dependencies
+
+Run `preinstall` for global dependency if there is any.
+
+```sh
+pnpm preinstall
+```
+
+Check node, npm, package manager version.
+
+```json
+  "packageManager": "pnpm@7.15.0",
+  "engines": {
+    "node": ">=18.12.1",
+    "npm": ">=8.19.2"
+  }
+```
 
 ## Prettier
 
