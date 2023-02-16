@@ -175,6 +175,29 @@ Check node, npm, package manager version.
   }
 ```
 
+### Package manager
+
+Use [`ni`](https://github.com/antfu/ni) if there are more than one single package manager in project.
+
+Run
+
+```sh
+# CLI
+npm i -g @antfu/ni
+
+# From package.json
+pnpm preinstall
+```
+
+And then,
+
+```sh
+ni <package-name># install
+nun <package-name># uninstall
+nr format # run prettier
+nr lint # run eslint
+```
+
 ## Prettier
 
 Run
