@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@antfu/ni': ^0.20.0
   '@types/node': ^18.13.0
   '@typescript-eslint/eslint-plugin': ^5.51.0
   '@typescript-eslint/parser': ^5.51.0
@@ -17,6 +18,7 @@ dependencies:
   typescript: 4.9.5
 
 devDependencies:
+  '@antfu/ni': 0.20.0
   '@types/node': 18.13.0
   '@typescript-eslint/eslint-plugin': 5.51.0_b635kmla6dsb4frxfihkw4m47e
   '@typescript-eslint/parser': 5.51.0_4vsywjlpuriuw3tl5oq6zy5a64
@@ -27,6 +29,11 @@ devDependencies:
   prettier: 2.8.3
 
 packages:
+
+  /@antfu/ni/0.20.0:
+    resolution: {integrity: sha512-mBgAuq2b0daSA/14LMyjEjaInD7/Zd7KVXZge7bQPKmtQJFqy9/pWBml6DMkMreeHQEomMtIbbeqReNJ/74kjA==}
+    hasBin: true
+    dev: true
 
   /@cspotcode/source-map-support/0.8.1:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
