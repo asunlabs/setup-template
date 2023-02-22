@@ -198,6 +198,52 @@ nr format # run prettier
 nr lint # run eslint
 ```
 
+### D2 diagram
+
+- D2 works in UNIX OS.
+
+Install
+
+```sh
+# install
+curl -fsSL https://d2lang.com/install.sh | sh -s --
+
+# uninstall
+curl -fsSL https://d2lang.com/install.sh | sh -s -- --uninstall
+```
+
+Write diagram in d2
+
+```d2
+# Actors
+hans: Hans Niemann
+
+defendants: {
+  mc: Magnus Carlsen
+  playmagnus: Play Magnus Group
+  chesscom: Chess.com
+  naka: Hikaru Nakamura
+
+  mc -> playmagnus: Owns majority
+  playmagnus <-> chesscom: Merger talks
+  chesscom -> naka: Sponsoring
+}
+
+# Accusations
+hans -> defendants: 'sueing for $100M'
+
+# Offense
+defendants.naka -> hans: Accused of cheating on his stream
+defendants.mc -> hans: Lost then withdrew with accusations
+defendants.chesscom -> hans: 72 page report of cheating
+```
+
+Render it in browser.
+
+```sh
+d2 --watch sample.d2 test.svg
+```
+
 ## Prettier
 
 Run

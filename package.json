@@ -4,7 +4,7 @@
   "description": "Code snippets from developerasun",
   "main": "index.js",
   "scripts": {
-    "preinstall": "pnpm i -D -g @antfu/ni",
+    "preinstall": "echo pnpm i -D -g @antfu/ni",
     "prepare": "husky install",
     "format:check": "prettier -c ./**/*.{js,ts}",
     "format": "prettier -w ./**/*.{js,ts}",
@@ -12,7 +12,9 @@
     "semver:patch": "npm version patch",
     "semver:minor": "npm version minor",
     "semver:major": "npm version major",
-    "run-all": "run-s format:check format lint"
+    "run-all": "run-s format:check format lint",
+    "d2:install": "echo curl -fsSL https://d2lang.com/install.sh | sh -s --",
+    "d2:remove": "echo curl -fsSL https://d2lang.com/install.sh | sh -s -- --uninstall"
   },
   "keywords": [
     "template",
