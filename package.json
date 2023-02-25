@@ -14,7 +14,8 @@
     "semver:major": "npm version major",
     "run-all": "run-s format:check format lint",
     "d2:install": "echo curl -fsSL https://d2lang.com/install.sh | sh -s --",
-    "d2:remove": "echo curl -fsSL https://d2lang.com/install.sh | sh -s -- --uninstall"
+    "d2:remove": "echo curl -fsSL https://d2lang.com/install.sh | sh -s -- --uninstall",
+    "recover:empty": "cd submodule && git submodule update --init"
   },
   "keywords": [
     "template",
