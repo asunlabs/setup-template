@@ -1,3 +1,6 @@
 [submodule "submodule/developerasun"]
 	path = submodule/developerasun
 	url = https://github.com/developerasun/developerasun.git
+[submodule "submodule/setup-template"]
+	path = submodule/setup-template
+	url = https://github.com/asunlabs/setup-template.git
