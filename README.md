@@ -179,7 +179,15 @@ Check node, npm, package manager version.
 
 ### Depcheck
 
-//
+Check current dependency configs.
+
+```sh
+# update deps to latest
+pnpm dep:up
+
+# check unused deps
+pnpm dep:list
+```
 
 ### Package manager
 
