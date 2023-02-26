@@ -1,7 +1,7 @@
 {
   "name": "setup-template",
   "version": "0.1.6",
-  "description": "Code snippets from developerasun",
+  "description": "setup template by developerasun",
   "main": "index.js",
   "scripts": {
     "preinstall": "echo pnpm i -D -g @antfu/ni",
@@ -9,6 +9,11 @@
     "format:check": "prettier -c ./**/*.{js,ts}",
     "format": "prettier -w ./**/*.{js,ts}",
     "lint": "eslint .",
+    "dep:up": "pnpm update",
+    "dep:list": "pnpm exec depcheck",
+    "ext:up": "code --list-extensions > extension.txt",
+    "ext:list:win": "type extension.txt",
+    "ext:list:unix": "cat extension.txt",
     "semver:patch": "npm version patch",
     "semver:minor": "npm version minor",
     "semver:major": "npm version major",
@@ -29,15 +34,18 @@
   },
   "devDependencies": {
     "@antfu/ni": "^0.20.0",
-    "@types/node": "^18.13.0",
-    "@typescript-eslint/eslint-plugin": "^5.51.0",
-    "@typescript-eslint/parser": "^5.51.0",
+    "@types/node": "^18.14.1",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "chalk": "4.1.2",
+    "cross-env": "^7.0.3",
+    "depcheck": "^1.4.3",
     "dotenv": "^16.0.3",
-    "eslint": "^8.33.0",
+    "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
     "husky": "^8.0.3",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.4"
   },
   "packageManager": "pnpm@7.15.0",
   "engines": {
