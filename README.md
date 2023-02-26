@@ -85,6 +85,8 @@ Check out `.gitconfig.example` and configure it at `.git/config`
 
 ### Submodule
 
+_This repo sets itself as submodule so that other repos using this as template can import and update latest changes_
+
 Get what you need from another repo with git submodule.
 
 Run to `add`
@@ -175,6 +177,10 @@ Check node, npm, package manager version.
   }
 ```
 
+### Depcheck
+
+//
+
 ### Package manager
 
 Use [`ni`](https://github.com/antfu/ni) if there are more than one single package manager in project.
@@ -242,6 +248,21 @@ Render it in browser.
 
 ```sh
 d2 --watch sample.d2 test.svg
+```
+
+### VS code extension
+
+Run
+
+```sh
+# export current VS code extensions
+pnpm ext:up
+
+# print the list on Windows
+pnpm ext:list:win
+
+# print the list on Unix
+pnpm ext:list:unix
 ```
 
 ## Prettier
