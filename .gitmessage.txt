@@ -1,11 +1,11 @@
-#ENH:
-#BUG:
-#DOC:
-#TST:
-#BLD:
-#PERF:
-#TYP:
-#CLN:
+#feat:
+#bug:
+#doc:
+#test:
+#build:
+#type:
+#refactor:
+#style:
 
 # =====================================
 # add . to filename when register this template to your IDE.
