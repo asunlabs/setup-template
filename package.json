@@ -4,11 +4,13 @@
   "description": "setup template by developerasun",
   "main": "index.js",
   "scripts": {
-    "preinstall": "echo pnpm i -D -g @antfu/ni",
+    "preinstall": "echo install these: pnpm i -D -g pnpm @antfu/ni @commitlint/cli @commitlint/config-conventional",
     "prepare": "husky install",
     "format:check": "prettier -c ./**/*.{js,ts}",
     "format": "prettier -w ./**/*.{js,ts}",
     "lint": "eslint .",
+    "check": "commitlint --edit",
+    "pkg:up": "pnpm add -g pnpm",
     "dep:up": "pnpm update",
     "dep:list": "pnpm exec depcheck",
     "ext:up": "code --list-extensions > extension.txt",
@@ -34,6 +36,8 @@
   },
   "devDependencies": {
     "@antfu/ni": "^0.20.0",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "@types/node": "^18.14.1",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
