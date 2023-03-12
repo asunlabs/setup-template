@@ -57,9 +57,9 @@ git push origin :[tag-name-here]
 Or use package manager for `semver`.
 
 ```sh
-pnpm version patch
-pnpm version minor
-pnpm version major
+pnpm semver:patch
+pnpm semver:minor
+pnpm semver:major
 ```
 
 ### Hook
@@ -92,7 +92,7 @@ Get what you need from another repo with git submodule.
 Run to `add`
 
 ```sh
-git submodule add https://github.com/developerasun/developerasun.git
+git:module:add
 ```
 
 Check status.
@@ -141,6 +141,12 @@ Or, if you already cloned,
 
 ```sh
 git submodule update --init
+```
+
+Or simply,
+
+```sh
+git:module:recover
 ```
 
 </details>
@@ -271,6 +277,9 @@ pnpm ext:list:win
 
 # print the list on Unix
 pnpm ext:list:unix
+
+# export list and install immediately
+pnpm ext:install
 ```
 
 ## Prettier
