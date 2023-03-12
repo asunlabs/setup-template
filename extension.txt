@@ -9,6 +9,8 @@ Cardinal90.multi-cursor-case-preserve
 christian-kohler.path-intellisense
 codezombiech.gitignore
 dbaeumer.vscode-eslint
+docsmsft.docs-markdown
+docsmsft.docs-preview
 dsznajder.es7-react-js-snippets
 dunstontc.vscode-gitignore-syntax
 eamodio.gitlens
@@ -22,6 +24,7 @@ hediet.vscode-drawio
 infeng.vscode-react-typescript
 jasonnutter.vscode-codeowners
 jebbs.plantuml
+jinliming2.vscode-go-template
 johnpapa.vscode-peacock
 jonkwheeler.styled-components-snippets
 JuanBlanco.solidity
@@ -36,6 +39,7 @@ NuclleaR.vscode-extension-auto-import
 oderwat.indent-rainbow
 PKief.material-icon-theme
 pranaygp.vscode-css-peek
+ReacTreeDev.reactree
 redhat.vscode-yaml
 RemixProject.ethereum-remix
 ritwickdey.LiveServer
