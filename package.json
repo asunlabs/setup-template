@@ -25,11 +25,10 @@
     "run-all": "run-s format:check format lint",
     "d2:install": "echo curl -fsSL https://d2lang.com/install.sh | sh -s --",
     "d2:remove": "echo curl -fsSL https://d2lang.com/install.sh | sh -s -- --uninstall",
-    "git:module:add": "git submodule add <target-url>",
-    "git:module:recover": "echo move to target directory && git submodule update --init",
+    "git:module:add": "echo git submodule add <target-url>",
+    "git:module:recover": "echo move to target directory && echo git submodule update --init",
     "process:list:win": "netstat -a -o -n",
-    "process:kill:win": "echo taskkill /F /PID [PID]",
-    "shell": "shx mkdir wow"
+    "process:kill:win": "echo taskkill /F /PID [PID]"
   },
   "keywords": [
     "template",
@@ -58,8 +57,7 @@
     "husky": "^8.0.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.4",
-    "shelljs": "^0.8.5",
-    "shx": "^0.3.4"
+    "shelljs": "^0.8.5"
   },
   "packageManager": "pnpm@7.15.0",
   "engines": {
