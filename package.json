@@ -4,7 +4,7 @@
   "description": "setup template by developerasun",
   "main": "index.js",
   "scripts": {
-    "preinstall": "echo install these: pnpm i -D -g pnpm @antfu/ni @commitlint/cli @commitlint/config-conventional netlify-cli",
+    "preinstall": "echo install these: pnpm i -D -g pnpm @antfu/ni @commitlint/cli @commitlint/config-conventional netlify-cli localtunnel",
     "prepare": "husky install",
     "format:check": "prettier -c ./**/*.{js,ts}",
     "format": "prettier -w ./**/*.{js,ts}",
@@ -28,7 +28,8 @@
     "git:module:add": "echo git submodule add <target-url>",
     "git:module:recover": "echo move to target directory && echo git submodule update --init",
     "process:list:win": "netstat -a -o -n",
-    "process:kill:win": "echo taskkill /F /PID [PID]"
+    "process:kill:win": "echo taskkill /F /PID [PID]",
+    "expose:8080": "ngrok http 8080"
   },
   "keywords": [
     "template",
@@ -55,6 +56,8 @@
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "husky": "^8.0.3",
+    "localtunnel": "^2.0.2",
+    "ngrok": "^4.3.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.4",
     "shelljs": "^0.8.5"
