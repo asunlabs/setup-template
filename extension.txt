@@ -9,7 +9,6 @@ Cardinal90.multi-cursor-case-preserve
 christian-kohler.path-intellisense
 codezombiech.gitignore
 dbaeumer.vscode-eslint
-docsmsft.docs-markdown
 docsmsft.docs-preview
 dsznajder.es7-react-js-snippets
 dunstontc.vscode-gitignore-syntax
@@ -56,5 +55,6 @@ tomoki1207.pdf
 usernamehw.errorlens
 WakaTime.vscode-wakatime
 wix.vscode-import-cost
+zamerick.vscode-caddyfile-syntax
 zhuangtongfa.material-theme
 zrachod.mono-snippets
