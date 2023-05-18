@@ -12,6 +12,7 @@
     "lint:commit": "commitlint --edit",
     "commit:set": "git config --local commit.template .gitmessage.txt",
     "commit:reset": "git config --global --unset-all commit.template",
+    "command:win": "node command.js",
     "pkg:up": "pnpm add -g pnpm",
     "dep:up": "pnpm update",
     "dep:list": "pnpm exec depcheck",
